@@ -6,13 +6,15 @@
 
     <form action="{% url 'display_by_category' %}" method="POST">
         {% csrf_token %}
-        <select name="category" class="form-select" aria-label="Default select example">
-            <option selected>Select a category</option>
-            {% for c in categories %}
-            <option value="{{ c }}">{{ c }}</option>
-            {% endfor %}
-        </select>
-        <button type="submit" class="btn btn-primary">Select</button>
+        <div class="input-group">
+            <select name="category" class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                <option selected>Select a category</option>
+                {% for c in categories %}
+                <option value="{{ c }}">{{ c }}</option>
+                {% endfor %}
+            </select>
+        <button type="submit" class="btn btn-outline-primary">Select</button>
+        </div>
     </form>
 
     <div class="row m-1">
