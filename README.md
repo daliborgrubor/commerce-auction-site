@@ -36,3 +36,6 @@ Title, Category (Select a category from the dropdown and Select button), Descrip
 Add bid, Add comment, Remove from Watchlist button.
 
 ### Log out
+
+## Django Admin Interface
+Site administrators are able to view, add, edit, and delete users, categories, listings, comments, and bids made on the site. Also, the only way to make a new category is by using Django Admin Interface.
