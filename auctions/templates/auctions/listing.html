@@ -17,7 +17,7 @@
     </div>
 
     <div>
-        {% if listing.is_active and user == listing.price.user %}
+        {% if not listing.is_active and user == listing.price.user %}
         <div class="alert alert-success" role="alert">
             Congratulations!
             You won the auction!
