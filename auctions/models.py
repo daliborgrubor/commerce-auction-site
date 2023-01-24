@@ -1,17 +1,14 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
-
 class User(AbstractUser):
     pass
-
 
 class Category(models.Model):
     category_name = models.CharField(max_length=100)
 
     def __str__(self) -> str:
         return self.category_name
-
 
 class Bid(models.Model):
     bid = models.IntegerField(default=0)
@@ -33,7 +30,6 @@ class Listing(models.Model):
 
     def __str__(self) -> str:
         return self.title
-
 
 class Comment(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, blank=True, null=True, related_name="user_comment")
