@@ -6,11 +6,11 @@
 
     <form action="{% url 'create' %}" method="POST">
         {% csrf_token %}
-        <div class="mb-3">
+        <div class="mb-1">
             <label for="title" class="form-label">Title</label>
             <input type="text" name="title" class="form-control" id="title">
         </div>
-        <div class="mb-3">
+        <div class="mb-1">
             <label class="form-label">Category</label>
             <select name="category" class="form-select" aria-label="Default select example">
                 <option selected>Select a category</option>
@@ -19,15 +19,15 @@
                 {% endfor %}
             </select>
         </div>
-        <div class="mb-3">
+        <div class="mb-1">
             <label for="description" class="form-label">Description</label>
             <input type="text" name="description" class="form-control" id="description">
         </div>
-        <div class="mb-3">
+        <div class="mb-1">
             <label for="img_url" class="form-label">Image URL</label>
             <input type="text" name="img_url" class="form-control" id="img_url">
         </div>
-        <div class="mb-3">
+        <div class="mb-1">
             <label for="price" class="form-label">Price</label>
             <input type="number" min="0" name="price" class="form-control" id="price">
         </div>
